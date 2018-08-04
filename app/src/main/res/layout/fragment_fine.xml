@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fine Status"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/textViewFineStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView8"
+        android:layout_marginTop="10dp"
+        android:text="Your Fine is : "
+        android:textSize="25sp" />
+
+    <ListView
+        android:id="@+id/fineBooksListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewFineStatus"
+        android:layout_marginTop="20dp"
+        android:divider="@android:color/black"
+        android:stackFromBottom="false"
+        android:transcriptMode="alwaysScroll"
+        tools:listitem="@layout/fragment_issued_books_list" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/textView8">
+
+        <ProgressBar
+            android:id="@+id/progressBarFineStatus"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonPayFine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Pay Fine" />
+</RelativeLayout>

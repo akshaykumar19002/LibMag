@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/books_swipe_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    android:padding="10dp"
+    tools:context="com.kumar.akshay.libmag.librarian.LibrarianActivity">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/issuedBooksRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@android:color/black"
+        android:stackFromBottom="false"
+        android:transcriptMode="alwaysScroll"
+        tools:listitem="@layout/fragment_issued_books_list" />
+
+</android.support.v4.widget.SwipeRefreshLayout>

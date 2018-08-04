@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_books"
+            android:title="Boooks" />
+        <item
+            android:id="@+id/nav_issue_books"
+            android:title="Issued Books" />
+        <item
+            android:id="@+id/nav_issue_a_book"
+            android:title="Issue a Book" />
+        <item
+            android:id="@+id/nav_return_a_book"
+            android:title="Return a Book" />
+        <item
+            android:id="@+id/nav_show_all_users"
+            android:title="Student Accounts" />
+        <item
+            android:id="@+id/nav_student_login_requests"
+            android:title="Student Login Requests" />
+    </group>
+
+    <item android:title="Fine">
+        <menu>
+            <item
+                android:id="@+id/nav_fine_student"
+                android:title="By Student" />
+            <item
+                android:id="@+id/nav_fine_book"
+                android:title="By Book" />
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/nav_about_lib"
+        android:title="About"/>
+
+    <item
+        android:id="@+id/nav_signout"
+        android:title="Signout"/>
+
+</menu>
